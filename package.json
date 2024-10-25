@@ -1,0 +1,44 @@
+{
+  "name": "fliteconsulting.io",
+  "version": "1.0.0",
+  "description": "homepage of fliteconsulting.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "react-scripts start",
+    "build": "react-scripts build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Flite999/fliteconsulting.git"
+  },
+  "author": "Mark Kleinhaus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https:/flightconsulting.io/issues"
+  },
+  "homepage": "https://flightconsulting.io",
+  "dependencies": {
+    "react-dom": "^18.3.1",
+    "react-markdown": "^9.0.1",
+    "react-scripts": "^5.0.1"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.25.9",
+    "@testing-library/jest-dom": "^6.6.2",
+    "@testing-library/react": "^16.0.1",
+    "jest": "^27.5.1"
+  }
+}

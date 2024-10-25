@@ -1,0 +1,122 @@
+html,
+body {
+    margin: 0;
+    font-family: 'Crimson Text', serif;
+    padding: 0;
+    height: 100%;
+}
+
+#root {
+    height: 100%;
+}
+
+.App {
+    background-image: url('images/background.jpg');
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+
+.header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #ddd;
+}
+
+.company-title h1 {
+    margin: 20px;
+    text-align: left;
+    font-weight: lighter;
+}
+
+.company-title h2 {
+    margin: 20px;
+    text-align: left;
+}
+
+.company-title p,
+.company-title ul {
+    margin: 20px;
+    font-size: 1.2rem;
+    text-align: left;
+    font-weight: lighter;
+}
+
+.company-title ul {
+    list-style-type: disc;
+    margin-left: 10px;
+    text-align: left;
+    font-weight: lighter;
+}
+
+.menu-button {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+    right: 20px;
+}
+
+.menu-button:hover {
+    transform: scale(1.1);
+    /* Scale the button on hover */
+}
+
+.menu-button:active {
+    animation: button-click 0.3s ease;
+    /* Apply animation on click */
+}
+
+@keyframes button-click {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.laptop-image {
+    width: 80%;
+    max-width: 600px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: left;
+    margin: 10px;
+    align-items: bottom;
+    font-weight: lighter;
+}
+
+.no-interaction {
+    pointer-events: none;
+}
+
+#contact-form,
+#contact-form * {
+    pointer-events: auto;
+}
