@@ -8,6 +8,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "docker:build": "docker build -t ghcr.io/flite999/fliteconsulting:latest .",
+    "docker:run": "docker run -p 8080:80 ghcr.io/flite999/fliteconsulting:latest",
     "docker:push": "docker push ghcr.io/flite999/fliteconsulting:latest"
   },
   "repository": {
