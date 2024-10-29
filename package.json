@@ -6,7 +6,9 @@
   "scripts": {
     "test": "test",
     "start": "react-scripts start",
-    "build": "react-scripts build"
+    "build": "react-scripts build",
+    "docker:build": "docker build -t ghcr.io/flite999/fliteconsulting:latest .",
+    "docker:push": "docker push ghcr.io/flite999/fliteconsulting:latest"
   },
   "repository": {
     "type": "git",
