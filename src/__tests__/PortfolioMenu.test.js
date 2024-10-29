@@ -10,5 +10,4 @@ describe('PortfolioMenu Component', () => {
         expect(screen.getByText('(under construction)')).toBeInTheDocument();
     });
 
-    // Add more tests specific to PortfolioMenu if there are more functionalities
 });
