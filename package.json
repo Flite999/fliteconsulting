@@ -7,9 +7,12 @@
     "test": "test",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "docker:build": "docker build -t ghcr.io/flite999/fliteconsulting:latest .",
-    "docker:run": "docker run -p 8080:80 ghcr.io/flite999/fliteconsulting:latest",
-    "docker:push": "docker push ghcr.io/flite999/fliteconsulting:latest"
+    "docker:ghcr:build": "docker build -t ghcr.io/flite999/fliteconsulting:latest .",
+    "docker:ghcr:run": "docker run -p 8080:80 ghcr.io/flite999/fliteconsulting:latest",
+    "docker:ghcr:push": "docker push ghcr.io/flite999/fliteconsulting:latest",
+    "docker:do:build": "docker build -t registry.digitalocean.com/flite-registry/fliteconsulting:latest .",
+    "docker:do:run": "docker run -p 8080:80 registry.digitalocean.com/flite-registry/fliteconsulting:latest",
+    "docker:do:push": "docker push registry.digitalocean.com/flite-registry/fliteconsulting:latest"
   },
   "repository": {
     "type": "git",
