@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
       - name: fliteconsulting
-        image: ghcr.io/flite999/fliteconsulting:latest
+        image: registry.digitalocean.com/flite-registry/fliteconsulting:latest
         ports:
         - containerPort: 80
       imagePullSecrets:
-      - name: ghcr-secret
+      - name: flite-registry
