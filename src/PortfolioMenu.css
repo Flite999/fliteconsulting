@@ -1,24 +1,46 @@
-.portfolio-menu {
+.portfolio-sidebar {
     position: fixed;
-    top: 70px;
-    right: 20px;
-    width: 250px;
+    top: 0;
+    right: 0;
+    width: 200px;
     height: 100vh;
-    background-color: #eaeaea;
-    border: 1px solid #ddd;
-    padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #cff4fd;
+    /* border-left: 1px solid #ddd; */
+    padding: 20px;
+    /* box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); */
     z-index: 999;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-height: calc(100vh - 120px);
+    justify-content: flex-start;
+    align-items: flex-start;
     overflow-y: auto;
-    justify-content: space-between;
+    transition: transform 0.3s ease;
+    transform: translateX(100%);
 }
 
-.portfolio-menu h2 {
+.portfolio-sidebar.open {
+    transform: translateX(0);
+}
+
+.portfolio-sidebar h2 {
     margin-bottom: 20px;
     font-size: 1.5rem;
+}
+
+.portfolio-sidebar a {
+    margin-top: 20px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.portfolio-sidebar i {
+    font-size: 1.5rem;
+}
+
+.app-content {
+    transition: margin-right 0.3s ease;
+}
+
+.app-content.shifted {
+    margin-right: 250px;
 }
