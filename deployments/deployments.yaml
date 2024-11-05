@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: fliteconsulting-deployment
+  name: fliteconsulting
 spec:
   replicas: 2
   selector:
@@ -17,5 +17,6 @@ spec:
         image: registry.digitalocean.com/flite-registry/fliteconsulting:latest
         ports:
         - containerPort: 80
+        imagePullPolicy: Always
       imagePullSecrets:
       - name: flite-registry

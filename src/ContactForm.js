@@ -19,6 +19,8 @@ function ContactForm({ toggleContactForm }) {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
+        //console.log('web3 access key:', process.env.REACT_APP_WEB3_ACCESS_KEY);
+
         const response = await fetch('https://api.web3forms.com/submit', {
             method: 'POST',
             headers: {
@@ -26,7 +28,7 @@ function ContactForm({ toggleContactForm }) {
                 'Accept': 'application/json'
             },
             body: JSON.stringify({
-                access_key: process.env.WEB3_ACCESS_KEY,
+                access_key: process.env.REACT_APP_WEB3_ACCESS_KEY,
                 ...formData
             })
         });

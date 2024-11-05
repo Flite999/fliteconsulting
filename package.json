@@ -10,7 +10,7 @@
     "docker:ghcr:build": "docker build -t ghcr.io/flite999/fliteconsulting:latest .",
     "docker:ghcr:run": "docker run -p 8080:80 ghcr.io/flite999/fliteconsulting:latest",
     "docker:ghcr:push": "docker push ghcr.io/flite999/fliteconsulting:latest",
-    "docker:do:build": "docker build -t registry.digitalocean.com/flite-registry/fliteconsulting:latest .",
+    "docker:do:build": "docker build --platform linux/amd64 -t registry.digitalocean.com/flite-registry/fliteconsulting:latest .",
     "docker:do:run": "docker run -p 8080:80 registry.digitalocean.com/flite-registry/fliteconsulting:latest",
     "docker:do:push": "docker push registry.digitalocean.com/flite-registry/fliteconsulting:latest"
   },
@@ -45,6 +45,7 @@
     "@babel/preset-react": "^7.25.9",
     "@testing-library/jest-dom": "^6.6.2",
     "@testing-library/react": "^16.0.1",
+    "dotenv-cli": "^7.4.2",
     "jest": "^27.5.1"
   }
 }
