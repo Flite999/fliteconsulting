@@ -28,6 +28,19 @@ body {
     position: relative;
 }
 
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    .App {
+        background-image: url('images/flitetorch mobile.png');
+        /* Use a different image for mobile */
+        background-size: cover;
+        /* Ensures the background image scales with the window size */
+        background-position: center center;
+        /* Centers the background image */
+    }
+}
+
+
 .app-content {
     flex: 1;
     transition: margin-right 0.3s ease;

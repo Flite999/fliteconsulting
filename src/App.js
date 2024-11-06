@@ -26,6 +26,9 @@ function App() {
                         <li>Software Architecture</li>
                         <li>Help your services scale and be reliable</li>
                     </ul>
+                    <p>
+                        <a href="#contact-form" onClick={toggleContactForm}>Contact</a> for a free consultation and quote today.
+                    </p>
                 </div>
                 <button className="menu-button" onClick={toggleMenu}>
                     &#9776;
@@ -34,9 +37,7 @@ function App() {
 
             </div>
             <footer className="footer">
-                <p>
-                    <a href="#contact-form" onClick={toggleContactForm}>Contact</a> for a free consultation and quote today.
-                </p>
+
                 <p>&copy; 2024 Flite Consulting. All rights reserved.</p>
             </footer>
 
